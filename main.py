@@ -8,7 +8,7 @@ def proxy():
     url = request.args.get("url")
 
     if not url:
-        return "Add this to the end of the url: ?url=https://your-website.com"
+        return "Add this to the end of the url (If it doesn't work go to cool-school-tech.onrender.com): ?url=https://your-website.com"
 
     r = requests.get(url)
 
